@@ -1,0 +1,1 @@
+export {RolePassOne as One} from "./RolePassOne"
