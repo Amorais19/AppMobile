@@ -1,8 +1,16 @@
 import { StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-    title: {
+    flex: {
+        flex: 0.7,
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    words: {
         color: '#FFF',
         textAlign: 'center'
+    },
+    cont: {
+        
     },
   });
