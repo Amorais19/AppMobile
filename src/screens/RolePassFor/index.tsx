@@ -4,14 +4,14 @@ import { styles } from "./styles"
 
 export function RolePassOne() {
     const cogumelos = require('../../assets/Wallpapper.png')
-    const calendar = require('../../assets/calendar.png')
+    const list = require('../../assets/lista-de-tarefas.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
             <View style={styleContainer.container}>
                 <View style={styles.flex}>
-                    <Text style={styles.title}>Life Style</Text>
-                    <Image source={calendar}/>
-                    <Text style={styles.words}>Organize sua agenda, marque seus compromissos....</Text>
+                    <Text style={styles.title}> Life Style </Text>
+                    <Image source={list}/>
+                    <Text style={styles.words}>Anote seus afazeres diários, não esqueça suas tarefas....</Text>
                 </View>
             </View>
         </ImageBackground>
