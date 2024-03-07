@@ -1,1 +1,1 @@
-export {RolePassOne as One} from "./RolePassOne"
+export {RolePassOne as One} from "./RolePassOne";

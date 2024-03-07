@@ -15,6 +15,6 @@ export const styles = StyleSheet.create({
     title: {
         color: '#FFF',
         fontSize: 40,
-        fontStyle: 'italic',
+        fontFamily: 'Slackey_400Regular'
     },
   });

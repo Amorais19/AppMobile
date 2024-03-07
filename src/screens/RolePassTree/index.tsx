@@ -1,8 +1,10 @@
 import { ImageBackground, View, Text, Image } from "react-native";
 import { styleContainer } from "../../styles/globalstyles";
 import { styles } from "./styles"
+import { ButtonSlide } from "../../components/ButtonSlide";
+import { IPagina } from "../../../App";
 
-export function RolePassOne() {
+export function RolePassTree({ setPageI }: IPagina) {
     const cogumelos = require('../../assets/Wallpapper.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
@@ -14,6 +16,11 @@ export function RolePassOne() {
                     mais fáceis ferramentas de uso diário.</Text>
                     
                 </View>
+                <View>
+                <ButtonSlide onPressI={() => setPageI(1)} />
+                <ButtonSlide onPressI={() => setPageI(2)} />
+                <ButtonSlide onPressI={() => setPageI(3)} />
+            </View> 
             </View>
         </ImageBackground>
     )
