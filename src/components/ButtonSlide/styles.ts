@@ -2,10 +2,9 @@ import { StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
     ball: {
-        color: '#FFF',
-        
-    },
-    ballPress: {
-        color: '#A3C8C8',
+        width: 15,
+        height: 15,
+        borderRadius: 15,
+        backgroundColor: '#FFF',
     },
   });

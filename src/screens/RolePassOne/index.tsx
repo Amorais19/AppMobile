@@ -9,19 +9,27 @@ export function RolePassOne({ setPageI }: IPagina) {
     const calendar = require('../../assets/calendar.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
-            <View style={styleContainer.container}>
+            <View style={styles.container}>
                 <View style={styles.flex}>
                     <Text style={styles.title}>Life Style</Text>
                     <Image source={calendar}/>
                     <Text style={styles.words}>Organize sua agenda, marque seus compromissos....</Text>
                 </View>
+                </View>
+            <View style={styles.button}>
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(1)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(2)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(3)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(4)} />
+                </View> 
             </View>
-            <View>
-                <ButtonSlide onPressI={() => setPageI(1)} />
-                <ButtonSlide onPressI={() => setPageI(2)} />
-                <ButtonSlide onPressI={() => setPageI(3)} />
-                <ButtonSlide onPressI={() => setPageI(4)} />
-            </View> 
         </ImageBackground>
     )
 }

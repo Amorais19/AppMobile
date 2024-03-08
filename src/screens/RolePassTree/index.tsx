@@ -6,21 +6,29 @@ import { IPagina } from "../../../App";
 
 export function RolePassTree({ setPageI }: IPagina) {
     const cogumelos = require('../../assets/Wallpapper.png')
+    const money = require('../../assets/bolsa-de-dinheiro.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
-            <View style={styleContainer.container}>
+            <View style={styles.container}>
                 <View style={styles.flex}>
-                    <Text style={styles.title}> Life Style </Text>
-                    <Text style={styles.words}>Seja bem-vindo ao Life Style!
-                    Aqui você consegue se manter organizado utilizando nossas 
-                    mais fáceis ferramentas de uso diário.</Text>
-                    
+                    <Text style={styles.title}>Life Style</Text>
+                    <Image source={money}/>
+                    <Text style={styles.words}>Cuide do seu financeiro, controle seus gastos....</Text>
                 </View>
-                <View>
-                <ButtonSlide onPressI={() => setPageI(1)} />
-                <ButtonSlide onPressI={() => setPageI(2)} />
-                <ButtonSlide onPressI={() => setPageI(3)} />
-            </View> 
+                </View>
+            <View style={styles.button}>
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(1)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(2)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(3)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(4)} />
+                </View> 
             </View>
         </ImageBackground>
     )

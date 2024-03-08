@@ -1,11 +1,18 @@
 import { StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 30,
+    },
     flex: {
         flex: 0.5,
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'center',
         padding: 1,
+        width: 350,
     },
     words: {
         color: '#FFF',
@@ -15,6 +22,14 @@ export const styles = StyleSheet.create({
     title: {
         color: '#FFF',
         fontSize: 40,
-        fontStyle: 'italic',
+        fontFamily: 'Slackey_400Regular'
     },
+    button: {
+        flexDirection: 'row',
+        paddingBottom: 20,
+        alignItems: 'center'
+    },
+    buttonSpace: {
+        paddingHorizontal: 15,
+    }
   });

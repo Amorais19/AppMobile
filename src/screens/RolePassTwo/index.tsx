@@ -9,17 +9,26 @@ export function RolePassTwo({ setPageI }: IPagina) {
     const list = require('../../assets/lista-de-tarefas.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
-            <View style={styleContainer.container}>
+            <View style={styles.container}>
                 <View style={styles.flex}>
-                    <Text style={styles.title}> Life Style </Text>
+                <Text style={styles.title}> Life Style </Text>
                     <Image source={list}/>
                     <Text style={styles.words}>Anote seus afazeres diários, não esqueça suas tarefas....</Text>
                 </View>
-                <View>
-                <ButtonSlide onPressI={() => setPageI(1)} />
-                <ButtonSlide onPressI={() => setPageI(2)} />
-                <ButtonSlide onPressI={() => setPageI(3)} />
-            </View> 
+                </View>
+            <View style={styles.button}>
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(1)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(2)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(3)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(4)} />
+                </View> 
             </View>
         </ImageBackground>
     )

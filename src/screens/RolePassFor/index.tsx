@@ -6,20 +6,33 @@ import { IPagina } from "../../../App";
 
 export function RolePassFor({ setPageI }: IPagina) {
     const cogumelos = require('../../assets/Wallpapper.png')
-    const list = require('../../assets/lista-de-tarefas.png')
     return(
         <ImageBackground source={cogumelos} style={styleContainer.container}>
             <View style={styleContainer.container}>
                 <View style={styles.flex}>
                     <Text style={styles.title}> Life Style </Text>
-                    <Image source={list}/>
-                    <Text style={styles.words}>Anote seus afazeres diários, não esqueça suas tarefas....</Text>
+                    <Text style={styles.words}>Seja bem-vindo ao <Text style={styles.titleText}>Life Style</Text>!
+                    Aqui você consegue se manter organizado utilizando nossas 
+                    mais fáceis ferramentas de uso diário.</Text>
+                    <View>
+                        <Text style={styles.buttonRegistrar}>Registre-se</Text>
+                        <Text style={styles.textEntrar}>Já possui conta? Entrar</Text>
+                    </View>
                 </View>
-                <View>
-                <ButtonSlide onPressI={() => setPageI(1)} />
-                <ButtonSlide onPressI={() => setPageI(2)} />
-                <ButtonSlide onPressI={() => setPageI(3)} />
-            </View> 
+            </View>
+            <View style={styles.button}>
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(1)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(2)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(3)} />
+                </View> 
+                <View style={styles.buttonSpace}>
+                    <ButtonSlide onPressI={() => setPageI(4)} />
+                </View> 
             </View>
         </ImageBackground>
     )
