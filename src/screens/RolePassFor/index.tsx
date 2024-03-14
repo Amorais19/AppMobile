@@ -1,7 +1,7 @@
 import { ImageBackground, View, Text, Image } from "react-native";
 import { styleContainer } from "../../styles/globalstyles";
 import { styles } from "./styles"
-import { ButtonSlide } from "../../components/ButtonSlide";
+import { ButtonSlide, ButtonSlides } from "../../components/ButtonSlide";
 import { IPagina } from "../../../App";
 
 export function RolePassFor({ setPageI }: IPagina) {
@@ -15,23 +15,27 @@ export function RolePassFor({ setPageI }: IPagina) {
                     Aqui você consegue se manter organizado utilizando nossas 
                     mais fáceis ferramentas de uso diário.</Text>
                     <View>
-                        <Text style={styles.buttonRegistrar}>Registre-se</Text>
-                        <Text style={styles.textEntrar}>Já possui conta? Entrar</Text>
+                        <View>
+                            <ButtonSlides onPressI={() => setPageI(5)}>
+                                <Text style={styles.buttonRegister}>Registre-se</Text>
+                            </ButtonSlides>
+                        </View>
+                        <Text style={styles.textEntrar}>Já possui conta? <Text style={styles.textNegrito}>Entrar</Text></Text>
                     </View>
                 </View>
             </View>
             <View style={styles.button}>
                 <View style={styles.buttonSpace}>
-                    <ButtonSlide onPressI={() => setPageI(1)} />
+                    <ButtonSlide onPressI={() => setPageI(1)} cor={false}/>
                 </View> 
                 <View style={styles.buttonSpace}>
-                    <ButtonSlide onPressI={() => setPageI(2)} />
+                    <ButtonSlide onPressI={() => setPageI(2)} cor={false}/>
                 </View> 
                 <View style={styles.buttonSpace}>
-                    <ButtonSlide onPressI={() => setPageI(3)} />
+                    <ButtonSlide onPressI={() => setPageI(3)} cor={false}/>
                 </View> 
                 <View style={styles.buttonSpace}>
-                    <ButtonSlide onPressI={() => setPageI(4)} />
+                    <ButtonSlide onPressI={() => setPageI(4)} cor={true}/>
                 </View> 
             </View>
         </ImageBackground>

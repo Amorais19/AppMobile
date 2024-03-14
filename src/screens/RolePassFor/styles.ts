@@ -22,7 +22,8 @@ export const styles = StyleSheet.create({
     title: {
         color: '#FFF',
         fontSize: 40,
-        fontFamily: 'Slackey_400Regular'
+        fontFamily: 'Slackey_400Regular',
+        paddingTop: 25,
     },
     titleText: {
         color: '#FFF',
@@ -36,17 +37,16 @@ export const styles = StyleSheet.create({
     buttonSpace: {
         paddingHorizontal: 15,
     },
-    buttonRegistrar: {
+    buttonRegister: {
         color: '#FFF',
-        fontSize: 25,
-        backgroundColor: '#5F9898',
-        padding: 10,
-        paddingHorizontal: 30,
-        borderRadius: 50,
-        textAlign: 'center'
+        fontSize: 30
     },
     textEntrar: {
         color: '#FFF',
-        textAlign: 'center'
-    }
+        textAlign: 'center',
+        fontSize: 15
+    },
+    textNegrito: {
+        fontWeight: 'bold',
+    },
   });
